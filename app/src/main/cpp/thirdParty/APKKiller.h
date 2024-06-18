@@ -2,23 +2,23 @@
 // Modified by Laughing Muffin on 15/11/2023
 //
 
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/stdio.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/iostream"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/vector"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/jni.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/thread"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/future"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/unordered_map"
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <jni.h>
+#include <thread>
+#include <future>
+#include <unordered_map>
 
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/unistd.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/fcntl.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/sys/stat.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/sys/types.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/dlfcn.h"
+#include <unistd.h>
+#include <fcntl.h>
+#include <stat.h>
+#include <types.h>
+#include <dlfcn.h>
 
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/android/asset_manager.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/android/asset_manager_jni.h"
-#include "../../../../../../../AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/android/log.h"
+#include <asset_manager.h>
+#include <asset_manager_jni.h>
+#include <log.h>
 
 #include "whale/include/whale.h"
 
