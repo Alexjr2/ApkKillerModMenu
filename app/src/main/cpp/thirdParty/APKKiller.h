@@ -2,23 +2,23 @@
 // Modified by Laughing Muffin on 15/11/2023
 //
 
-#include <stdio.h>
-#include <iostream>
-#include <vector>
+#include <c++/v1/stdio.h>
+#include <c++/v1/iostream>
+#include <c++/v1/vector>
 #include <jni.h>
-#include <thread>
-#include <future>
-#include <unordered_map>
+#include <c++/v1/thread>
+#include <c++/v1/future>
+#include <c++/v1/unordered_map>
 
 #include <unistd.h>
 #include <fcntl.h>
-#include <stat.h>
-#include <types.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <dlfcn.h>
 
-#include <asset_manager.h>
-#include <asset_manager_jni.h>
-#include <log.h>
+#include <android/asset_manager.h>
+#include <android/asset_manager_jni.h>
+#include <android/log.h>
 
 #include "whale/include/whale.h"
 
