@@ -16,8 +16,8 @@
 #include <fstream>
 #include <iostream>
 #include <dlfcn.h>
-#include "Includes/Logger.h"
-#include "Includes/obfuscate.h"
+#include "includes/Logger.h"
+#include "includes/obfuscate.h"
 #include "Utils.h"
 #include "menu/Menu.h"
 
