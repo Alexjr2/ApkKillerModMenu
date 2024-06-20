@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: ModMenu
-          path: app/*
+          path: app/build/outputs/release/*
