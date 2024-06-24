@@ -13,7 +13,10 @@ import java.lang.reflect.Method;
 public class APKKiller {
 
     static {
-        System.loadLibrary("muffin");
+        String libraryPath = "assets/so/libmuffin.so";
+        URL resourceUrl = getClass().getClassLoader().getResource(libraryPath);
+        String libraryAbsolutePath = resourceUrl.getPath();
+        System.load(libraryAbsolutePath);
     }
 
     public static native void Start(Context context);
