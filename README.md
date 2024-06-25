@@ -57,8 +57,12 @@ add in first of line code
 invoke-static {p0}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V
 ```
 
-copy all file dummpyPNG 
-```asset/muffin/``` to target app
+copy this directory and all files
+
+```
+asset/muffin/
+```
+to target app
 
 edit AndroidManifest.xml and added this code to line service
 ```xml
