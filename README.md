@@ -56,6 +56,15 @@ add in first of line code
 ```java
 invoke-static {p0}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V
 ```
+And next.
+
+This is for load Mod Menu and dummpypng
+add this code to first Activity onCreate(Landroid/os/Bundle;)V
+
+add before return-void.
+```java
+invoke-static {p0}, Lcom/android/support/Launcher;->startWithoutPermission(Landroid/content/Context;)V
+```
 
 copy this directory and all files
 
