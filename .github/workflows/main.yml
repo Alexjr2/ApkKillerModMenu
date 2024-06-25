@@ -2,8 +2,16 @@ name: Build CI(release)
 
 on:
  workflow_dispatch:
+  inputs:
+     TAG:
+      description: 'TAG Required'
+      required: true
+
+permissions:
+  contents: write
+
 jobs:
-  build:
+  build_CI:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
@@ -26,6 +34,25 @@ jobs:
 
       - name: Upload Artifact
         uses: actions/upload-artifact@main
+        if: ${{ !github.head_ref }}
         with:
-          name: ModMenu
-          path: app/build/outputs/apk/release/*
+          name: ModMenu.apk
+          path: app/build/outputs/apk/release/*.apk
+  
+  create_release:
+    needs: build_CI
+    runs-on: ubuntu-latest
+    steps:
+     - name: download artifact
+       uses: actions/download-artifact@main
+       with:
+          path: release
+          merge-multiple: true
+     - name: display release-assets
+       run: tree ${{ github.workspace }}/release
+     - name: Upload release build
+       uses: softprops/action-gh-release@master
+       with:
+        tag_name: "${{ github.event.inputs.TAG }}"
+        fail_on_unmatched_files: true
+        files: release/*
