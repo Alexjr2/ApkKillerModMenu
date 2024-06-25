@@ -17,7 +17,7 @@
   - Dobby and xDL for now 
 - [x] Load Lib from Assets (Simple Java Example)
   - A simple example has been provided, it's not the best out there but I hope it gives a general idea.
-- [x] Load Lib from Assets (Simple C++ Example)
+- [] Load Lib from Assets (Simple C++ Example)
 - [ ] Memory Patch Tool
 
 ## Added LoadLib From Assets
