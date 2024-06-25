@@ -23,22 +23,39 @@
 ## Added LoadLib From Assets
 
 create new directory on assets
-```libmuffin```
-add libmuffin.so copy from lib to ```assets/libmuffin/```
+```
+libmuffin
+```
+add libmuffin.so copy from lib to
+```
+assets/libmuffin/
+```
 renamed to depend your arch needed
-```libmuffin64.so``` or ```libmuffin32.so```
+```
+libmuffin64.so
+```
+or 
+```
+libmuffin32.so
+```
 
 only choose one to added loadLibfrom assets
 
 for attachBaseContext(Landroid/content/Context;)V
 
-add in end of line code 
-```invoke-static {p1}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V```
+add in end of line code
+
+```java
+invoke-static {p1}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V
+```
 
 or for Activity first onCreate(Landroid/os/Bundle;)V
 
 add in first of line code
-```invoke-static {p0}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V```
+
+```java
+invoke-static {p0}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V
+```
 
 
 
