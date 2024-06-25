@@ -17,8 +17,31 @@
   - Dobby and xDL for now 
 - [x] Load Lib from Assets (Simple Java Example)
   - A simple example has been provided, it's not the best out there but I hope it gives a general idea.
-- [ ] Load Lib from Assets (Simple C++ Example)
+- [x] Load Lib from Assets (Simple C++ Example)
 - [ ] Memory Patch Tool
+
+## Added LoadLib From Assets
+
+create new directory on assets
+```libmuffin```
+add libmuffin.so copy from lib to ```assets/libmuffin/```
+renamed to depend your arch needed
+```libmuffin64.so``` or ```libmuffin32.so```
+
+only choose one to added loadLibfrom assets
+
+for attachBaseContext(Landroid/content/Context;)V
+
+add in end of line code 
+```invoke-static {p1}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V```
+
+or for Activity first onCreate(Landroid/os/Bundle;)V
+
+add in first of line code
+```invoke-static {p0}, Lcom/muffin/APKKiller;->Starting(Landroid/content/Context;)V```
+
+
+
 
 ### Load lib from assets
 This is nothing more than extracting the file from assets to a folder like "data dir" then loading it 
